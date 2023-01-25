@@ -33,4 +33,16 @@ public class ContaBancaria {
         System.out.println("DEPOSITO REALIZADO COM SUCESSO!");
         System.out.println("SEU SALDO É DE: " + (saldo + valorDeposito));
     }
+    void consultarSaldo() {
+        System.out.println("SEU SALDO É DE: " + saldo + " REAIS");
+    }
+    void verificarChequeEspecial() {
+        if (saldo < 0) {
+            System.out.println("SEU SALDO É DE " + saldo + " REAIS");
+            System.out.println("VOCÊ ESTÁ UTILIZANDO O CHEQUE ESPECIAL!");
+        } else {
+            System.out.println("SEU SALDO É DE " + saldo + " REAIS");
+            System.out.println("VOCÊ NÃO ESTÁ UTILIZANDO O CHEQUE ESPECIAL!");
+        }
+    }
 }

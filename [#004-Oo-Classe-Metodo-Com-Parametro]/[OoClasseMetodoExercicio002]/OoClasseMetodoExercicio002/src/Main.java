@@ -53,7 +53,15 @@ public class Main {
             case 2:
                 contaBancaria.depositar();
                 break;
-
+            case 3:
+                contaBancaria.consultarSaldo();
+                break;
+            case 4:
+                contaBancaria.verificarChequeEspecial();
+                break;
+            default:
+                System.out.println("OPÇÃO INVÁLIDA!");
+                System.out.println("TENTE NOVAMENTE");
         }
     }
 }

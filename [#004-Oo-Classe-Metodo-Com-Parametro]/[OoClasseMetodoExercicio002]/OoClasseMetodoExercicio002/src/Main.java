@@ -40,13 +40,20 @@ public class Main {
         System.out.println("SALDO BANCÁRIO: R$ " + contaBancaria.saldo);
         System.out.println("LIMITE DISPONÍVEL: R$ " + contaBancaria.limite + "\n");
         System.out.println("----------------------------------------------" + "\n");
+        System.out.println("===============================================");
+        System.out.println("============== OPERAÇÕES NUBANK ===============");
+        System.out.println("-----------------------------------------------");
         System.out.println("DIGITE A OPÇÃO DESEJADA:");
         Scanner entradaMenu = new Scanner(System.in);
         opcaoMenu = entradaMenu.nextInt();
         switch (opcaoMenu) {
             case 1:
-                contaBancaria.saque();
+                contaBancaria.sacar();
                 break;
+            case 2:
+                contaBancaria.depositar();
+                break;
+
         }
     }
 }

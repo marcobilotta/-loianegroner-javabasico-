@@ -8,6 +8,10 @@ public class Aluno {
     double disciplina2Nota2;
     double disciplina2Nota3;
     double media2;
+    double disciplina3Nota1;
+    double disciplina3Nota2;
+    double disciplina3Nota3;
+    double media3;
     String nomeCompleto;
     String curso;
     String disciplina1;
@@ -17,11 +21,11 @@ public class Aluno {
     void verificarMedia() {
         media1 = (disciplina1Nota1 + disciplina1Nota2 + disciplina1Nota3) / 3;
         media2 = (disciplina2Nota1 + disciplina2Nota2 + disciplina2Nota3) / 3;
-        if (media1 >= 7) {
-            System.out.println("ALUNO APROVADO!");
-        } else {
+        media3 = (disciplina3Nota1 + disciplina3Nota2 + disciplina3Nota3) / 3;
+        if ((media1 < 7) || (media2 < 7) || (media3 < 7)) {
             System.out.println("ALUNO REPROVADO!");
+        } else {
+            System.out.println("ALUNO APROVADO!");
         }
     }
-
 }

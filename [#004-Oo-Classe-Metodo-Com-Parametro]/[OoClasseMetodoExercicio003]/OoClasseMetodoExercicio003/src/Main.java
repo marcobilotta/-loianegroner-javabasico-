@@ -39,6 +39,12 @@ public class Main {
         aluno.disciplina2Nota1 = lerEntradaAluno.nextInt();
         aluno.disciplina2Nota2 = lerEntradaAluno.nextInt();
         aluno.disciplina2Nota3 = lerEntradaAluno.nextInt();
+        System.out.println("POR FIM, DIGITE A TERCEIRA E ÚLTIMA DISCIPLINA CURSADA: ");
+        aluno.disciplina3 = lerEntradaAluno.next();
+        System.out.println("DIGITE AS 3 NOTAS DA SEGUNDA DISCIPLINA INFORMADA: ");
+        aluno.disciplina3Nota1 = lerEntradaAluno.nextInt();
+        aluno.disciplina3Nota2 = lerEntradaAluno.nextInt();
+        aluno.disciplina3Nota3 = lerEntradaAluno.nextInt();
         System.out.println("\n");
         System.out.println("==================== PROCESSANDO AS INFORMAÇÕES, AGUARDE... =============================");
         System.out.println("-----------------------------------------------------------------------------------------" + "\n");
@@ -48,10 +54,11 @@ public class Main {
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         System.out.println("+============= BOLETIM ACADÊMICO ALUNO " + aluno.nomeCompleto + " ======================+");
         System.out.println("|---------------------------------------------------------------------------------------|");
+        System.out.println("| APROVAÇÃO DO ALUNO [ (MÉDIA1 + MÉDIA2 + MÉDIA3) / 3] > 7 ");
         aluno.verificarMedia();
         System.out.println("| DISCIPLINA 1: " + aluno.disciplina1 + " | NOTA 1: " + aluno.disciplina1Nota1 + " | NOTA 2: " + aluno.disciplina1Nota2 + " | NOTA 3: " + aluno.disciplina1Nota3 + " | MÉDIA: " + aluno.media1 + " | ");
         System.out.println("| DISCIPLINA 2: " + aluno.disciplina2 + " | NOTA 1: " + aluno.disciplina2Nota1 + " | NOTA 2: " + aluno.disciplina2Nota2 + " | NOTA 3: " + aluno.disciplina2Nota3 + " | MÉDIA: " + aluno.media2 + " | ");
-
+        System.out.println("| DISCIPLINA 3: " + aluno.disciplina3 + " | NOTA 1: " + aluno.disciplina3Nota1 + " | NOTA 2: " + aluno.disciplina3Nota2 + " | NOTA 3: " + aluno.disciplina3Nota3 + " | MÉDIA: " + aluno.media3 + " | ");
         System.out.println("|---------------------------------------------------------------------------------------|");
 
     }
